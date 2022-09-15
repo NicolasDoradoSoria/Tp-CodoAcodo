@@ -1,30 +1,117 @@
-.logoImg {
-    width: 100px;
-    margin-left: 4rem;
-}
-
-.mainImage {
-    width: 100%;
-    height: 43rem;
-    filter: brightness(50%);
-
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .maintxt {
     position: relative;
 }
 
-.overlay-text {
-    position: absolute;
-    bottom: 8px;
-    right: 100px;
-    bottom: 150px;
-    width: 30%;
-    text-align: end;
-}
-
 .btn-primary-outline {
     background-color: transparent;
     border-color: #ccc;
     color: #fff
+}
+
+.imageContainer {
+    text-align : center
+}
+.speakerimage{
+    width: 80%;
+    height: auto;
+    
+}
+
+.logoImg {
+    width: 20%;
+}
+
+.imageDescription{
+    text-align: start;
+    width: 75%;
+    margin-left: 3rem;
+} 
+
+.overlay-text {
+    position: absolute;
+    bottom: 8px;
+    right: 50px;
+    bottom: 120px;
+    width: 53%;
+    text-align: end;
+}
+.mainImage {
+    width: 100%;
+    height: 25rem;
+    filter: brightness(50%);
+}
+@media (max-width: 575px){
+    .textContainer{
+        width: 100%;
+    }
+    .imageDescription{
+        margin-left: 3rem;
+    } 
+    .overlay-text {
+        right: 40px;
+        bottom: 100px;
+        width: 70%;
+    }
+    .mainImage {
+        height: 25rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767px){
+    .textContainer{
+        width: 100%;
+    }
+    .imageDescription{
+        margin-left: 3.5rem;
+    } 
+    .overlay-text {
+        right: 50px;
+        bottom: 120px;
+        width: 53%;
+    }
+    .mainImage {
+        height: 30rem;
+    
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    .textContainer{
+        width: 50%;
+    }
+    .imageDescription{
+        margin-left: 2rem;
+    } 
+    .overlay-text {
+        right: 70px;
+        bottom: 120px;
+        width: 40%;
+    }
+    .mainImage {
+        height: 35rem;
+    }
+}
+
+@media (min-width: 992px){
+    .textContainer{
+        width: 33%;
+    }
+    .imageDescription{
+        margin-left: 3rem;
+    } 
+    .overlay-text {
+        right: 100px;
+        bottom: 150px;
+        width: 30%;
+    }
+
+    .mainImage {
+        height: 43rem;
+    }
 }
