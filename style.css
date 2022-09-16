@@ -46,10 +46,20 @@
     height: 25rem;
     filter: brightness(50%);
 }
+
+
+.leftContainer {
+    background-color: gray;
+}
+.bsAsContainer{
+    display: flex;
+}
+
 @media (max-width: 575px){
-    .textContainer{
-        width: 100%;
+    .bsAsContainer{
+        flex-direction: column;
     }
+
     .imageDescription{
         margin-left: 3rem;
     } 
@@ -61,9 +71,18 @@
     .mainImage {
         height: 25rem;
     }
+    .rightImage{
+        width: 100%;
+    }
+    .leftContainer {
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) and (max-width:767px){
+    .bsAsContainer{
+        flex-direction: column;
+    }
     .textContainer{
         width: 100%;
     }
